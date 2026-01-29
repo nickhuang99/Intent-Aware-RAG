@@ -32,18 +32,6 @@ We don't just claim 5W1H is better; we measure it.
 * See our [Vector Fallacy Golden Set](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Dataset-Vector-Fallacy-Golden-Set) for the test queries.
 * View the [Benchmarking Framework](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Benchmarking-Framework) to see how we eliminate hallucinations.
   
-### One Last Step: The `requirements.txt`
-To make that "Quick Start" actually work, you just need to create one more file in your main folder:
-
-1.  Click **Add file** -> **Create new file**.
-2.  Name it `requirements.txt`.
-3.  Paste these four lines:
-    ```text
-    openai
-    numpy
-    pandas
-    spacy
-    ```
 
 ### Why this finishes the project:
 * **The README** now has a "Hook" (The Fallacy), a "Visual" (The Flowchart), and "Action" (The Quick Start).
