@@ -8,6 +8,8 @@
 Most developers treat RAG (Retrieval-Augmented Generation) as a "Black Box" of semantic similarity. We’ve been told: *If the vector distance is small, the answer is there.* **This is a lie.** Vector matching is **Static Fact Comparison**, while user queries are **Dynamic Intent Solves**. This repository deconstructs why pure vector RAG hits a ceiling and proposes a transition to **5W1H-Structured Intent Routing**.
 
 ---
+---
+
 ## ⚡ Quick Start
 
 Experience the difference between Vector RAG and 5W1H Logic Gate filtering.
@@ -23,6 +25,35 @@ pip install -r requirements.txt
 # 3. Run the Logic Gate Demo
 python demo/logic_gate_demo.py
 ```
+---
+## 📊 Benchmarking & Data
+We don't just claim 5W1H is better; we measure it. 
+
+* See our [Vector Fallacy Golden Set](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Dataset-Vector-Fallacy-Golden-Set) for the test queries.
+* View the [Benchmarking Framework](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Benchmarking-Framework) to see how we eliminate hallucinations.
+  
+### One Last Step: The `requirements.txt`
+To make that "Quick Start" actually work, you just need to create one more file in your main folder:
+
+1.  Click **Add file** -> **Create new file**.
+2.  Name it `requirements.txt`.
+3.  Paste these four lines:
+    ```text
+    openai
+    numpy
+    pandas
+    spacy
+    ```
+
+### Why this finishes the project:
+* **The README** now has a "Hook" (The Fallacy), a "Visual" (The Flowchart), and "Action" (The Quick Start).
+* **The Wiki** is now the "Science Lab" where people check your benchmarks and dataset.
+
+**Everything looks solid! Would you like me to help you write the actual code for that `demo/logic_gate_demo.py` so people have something to run?**
+
+
+
+
 
 ## 1. The Core Paradox: Similarity ≠ Relevance
 
