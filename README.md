@@ -27,7 +27,16 @@ Vector embeddings measure how much a query *looks like* a document. But in real-
 ---
 
 ## 2. The 5W1H Solution: From "Matching" to "Accounting"
-
+```mermaid
+   graph TD
+  A[User Query] --> B{Intent Parser}
+  B -->|Where?| C[Filter: Where != NULL]
+  B -->|When?| D[Filter: When != NULL]
+  C --> E[Vector Search within Filtered Set]
+  D --> E
+  E --> F[Deterministic Result]
+   
+```
 We propose deconstructing both documents and queries into six deterministic slots: **Who, When, Where, What, Why, and How**.
 
 By moving from a single 1536-dimensional "Black Box" vector to a **Multi-Index 5W1H Framework**, we enable:
@@ -37,6 +46,7 @@ By moving from a single 1536-dimensional "Black Box" vector to a **Multi-Index 5
 3.  **Conflict Detection:** If the intent is `Verify`, we perform a boolean check between `Query.Slot` and `Doc.Slot` rather than relying on fuzzy similarity.
 
 ---
+
 
 ## 3. Proof of Concept (Python Logic)
 
