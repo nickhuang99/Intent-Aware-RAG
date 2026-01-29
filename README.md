@@ -8,6 +8,21 @@
 Most developers treat RAG (Retrieval-Augmented Generation) as a "Black Box" of semantic similarity. We’ve been told: *If the vector distance is small, the answer is there.* **This is a lie.** Vector matching is **Static Fact Comparison**, while user queries are **Dynamic Intent Solves**. This repository deconstructs why pure vector RAG hits a ceiling and proposes a transition to **5W1H-Structured Intent Routing**.
 
 ---
+## ⚡ Quick Start
+
+Experience the difference between Vector RAG and 5W1H Logic Gate filtering.
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/nickhuang99/Intent-Aware-RAG.git](https://github.com/nickhuang99/Intent-Aware-RAG.git)
+cd Intent-Aware-RAG
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the Logic Gate Demo
+python demo/logic_gate_demo.py
+```
 
 ## 1. The Core Paradox: Similarity ≠ Relevance
 
