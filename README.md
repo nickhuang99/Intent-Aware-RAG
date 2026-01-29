@@ -73,3 +73,8 @@ def intent_aware_search(structured_query, database):
         }
     )
     return results
+
+## 📊 Benchmarking & Data
+We don't just claim 5W1H is better; we measure it. 
+* See our [Vector Fallacy Golden Set](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Dataset-Vector-Fallacy-Golden-Set) for the test queries.
+* View the [Benchmarking Framework](https://github.com/nickhuang99/Intent-Aware-RAG/wiki/Benchmarking-Framework) to see how we eliminate hallucinations.
